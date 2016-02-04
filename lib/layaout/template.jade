@@ -1,0 +1,18 @@
+section(class="Layaout")
+		section(class="Layaout-angonist")
+			each card in [1,2,3,4,5]
+				include ../card/template.jade
+		section(class="Layaout-main")
+			div(class="Layaout-status")
+				div(class="Status")
+					- name = "Andres"
+					each name in ["Joaquin","Andres"]
+						include ../status/template.jade
+			div(class="Layaout-battle")
+				include ../battle/template.jade
+			div(class="Layaout-phases")
+				- text = "OMG ese ataque fue muy fuerte"
+				include ../phases/template.jade
+		section(class="Layaout-player") 
+			each card in [1,2,3,4,5]
+				include ../card/template.jade
